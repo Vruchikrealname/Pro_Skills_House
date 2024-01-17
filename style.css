@@ -1,9 +1,8 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,100;1,200;1,400&family=Tektur:wght@400..900&display=swap');
 
 
 
- 
+
 
 html {
     scroll-behavior: smooth;
@@ -13,28 +12,30 @@ html {
     --light: #eaecee;
     --color--text: #3c3e41;
     --box-shodow: 5px 5px 15px #c1c8d3, -5px -5px -15px #ffffffff;
-    --gradient-bg:linear-gradient(-45deg, #D000F7, #24BAE3);
+    --gradient-bg: linear-gradient(-45deg, #D000F7, #24BAE3);
 
-    
+
 }
-a{
+
+a {
     color: #3c3e41;
     text-decoration: none;
 
 
 }
-body{
+
+body {
     margin: 0;
     background-color: var(--light);
     color: var(--color--text);
     font-family: 'Poppins', sans-serif;
     font-size: 15px;
 
-    
+
 }
 
 
-header{
+header {
     position: fixed;
     top: 0;
     width: calc(100% -20px);
@@ -46,12 +47,18 @@ header{
     z-index: 1;
 
 }
+.logo{
+    align-items: center;
+    display: flex;
 
-header .logo img{
+}
+
+header .logo img {
     height: 50px;
     width: 50px;
 }
-header ul{
+
+header ul {
     margin: 0;
     list-style: none;
     display: flex;
@@ -60,17 +67,20 @@ header ul{
     align-items: center;
 
 }
+
 header ul li {
-    padding: 0 30px ;
+    padding: 0 30px;
 
 }
-.container{
+
+.container {
     width: 1200px;
     max-width: 90%;
     margin: auto;
 
 }
-.banner{
+
+.banner {
     margin-top: 150px;
     display: grid;
     grid-template-columns: 60% 40%;
@@ -78,50 +88,112 @@ header ul li {
     padding: 50px;
 
 }
-.banner .content{
+
+.banner .content {
     text-align: justify;
     padding-right: 50px;
 }
-.banner .content h1{
+
+.banner .content h1 {
     font-size: 4.5rem;
     margin: 0;
 }
 
- .gradientText{
+.gradientText {
     display: inline-block;
     background: var(--gradient-bg);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
-} 
+}
+
 .job {
     display: inline-block;
 
 
 }
-.job::before{
+
+.job::before {
     content: attr(data-job1);
     overflow: hidden;
     display: inline-flex;
     animation: effectText 1s linear infinite alternate, changeText 4s linear infinite;
 }
+
 @keyframes effectText {
-    from{
+    from {
         width: 0;
     }
-    to{
+
+    to {
         width: 500px;
     }
 }
 
-@keyframes changeText{
-    from{
+@keyframes changeText {
+    from {
         content: attr(data-job1);
     }
-    to{
+
+    to {
         content: attr(data-job2);
     }
 
-} 
+}
 
+.find {
+    margin-top: 5opx;
+
+}
+
+.find ul {
+    padding: 0;
+    list-style: none;
+
+}
+
+.find ul li {
+    width: 50px;
+    height: 50px;
+    box-shadow: var(--box-shodow);
+    margin: 10px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.find ul li:hover{
+   color: #fff;
+   background-image: var(--gradient-bg);
+
+
+}
+.banner .avatar{
+    position: relative;
+    height: max-content;
+    text-align: center;
+}
+.banner .avatar:hover{
+    position: absolute;
+    content: "";
+    widows: 90%;
+    height: 80%;
+    z-index: -1;
+    bottom: 0;
+    border-radius: 10px;
+    box-shadow: var(--box-shodow);
+
+
+}
+.banner img{
+    width: 90%;
+
+}
+header .navDiv,
+header .nav label,
+header input{
+display: none;
+}
 
