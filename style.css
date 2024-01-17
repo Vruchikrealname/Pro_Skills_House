@@ -38,7 +38,7 @@ body {
 header {
     position: fixed;
     top: 0;
-    width: calc(100% -20px);
+    width: calc(100% - 20px);
     padding: 10px;
     border-bottom: 1px solid #dce1e4;
     display: grid;
@@ -57,6 +57,10 @@ header {
 header .logo img {
     height: 50px;
     width: 50px;
+}
+.lines{
+    margin-right: -37px;
+    margin-top: 7px;
 }
 
 header ul {
@@ -315,7 +319,7 @@ header input {
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: red;
+        color: red;
         box-shadow: var(--box-shodow);
         border-radius: 50%;
 
