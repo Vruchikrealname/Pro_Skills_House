@@ -125,39 +125,3 @@ header ul li {
 } 
 
 
-/* 
-.gradientText {
-    display: inline-block;
-    background-color: var(--gradient-bg);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.job {
-    display: inline-block;
-}
-
-.job::before {
-    content: attr(data-job1);
-    overflow: hidden;
-    display: inline-flex;
-    animation: effectText 1s linear infinite alternate, changeText 1s linear infinite;
-}
-
-@keyframes effectText {
-    from {
-        width: 0;
-    }
-    to {
-        width: 500px;
-    }
-}
-
-@keyframes changeText {
-    from {
-        content: attr(data-job1);
-    }
-    to {
-        content: attr(data-job2);
-    }
-} */
