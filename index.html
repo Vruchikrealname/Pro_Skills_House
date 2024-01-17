@@ -14,6 +14,8 @@
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
     <link rel="stylesheet" href="style.css">
+
+
 </head>
 
 <body>
@@ -21,30 +23,66 @@
         <div class="logo">
             <a href="#"><img src="Logo.webp" alt="Log"></a>
             Pro_Skills_House
-
-            <div class="navDiv">
-                <label for="menu">
-                    <div><span class="material-symbols-outlined">
-                            menu
-                        </span></div>
-                </label>
-            </div>
         </div>
 
-
-        <ul class="nav">
-            <input type="checkbox" id="menu">
+        <div class="navDiv">
             <label for="menu">
+                <div><span class="material-symbols-outlined">
+                        menu
+                    </span></div>
+            </label>
+        </div>
+
+        <input type="checkbox" id="menu">
+        <ul class="nav">
+            <label for="menu">
+
                 <span class="material-symbols-outlined">
                     close
                 </span>
+
             </label>
             <li><a href="#home">Home</a></li>
-            <li><a href="#home">Skills</a></li>
-            <li><a href="#home">Projects</a></li>
-            <li><a href="#home">Contact</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </header>
+
+    <div class="container">
+        <div class="banner" id="home">
+            <div class="content">
+                <p>WELCOME TO MY HOUSE</p>
+                <h1>
+                    Hi, I'm Vaibhav Raut<br />
+                    <div class="graientText">
+                        <div class="job" data-job1="{devloper}" data-job2="{Frontend}"></div>
+                    </div>
+                </h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ipsum laudantium unde aperiam non,
+                    maxime esse, accusamus odio qui quae fugit mollitia officia eius ab nihil soluta cumque minus
+                    laborum magnam enim modi magni provident veniam! Ut eos laboriosam molestias eius, fugit expedita
+                    recusandae, debitis in veritatis hic minus autem.
+                </p>
+                <div class="find">
+                    <h3>FIND WITH ME</h3>
+                    <ul>
+                        <li>
+                            <img
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAACd0lEQVR4nO2Zv2sUQRTHP+evwigSrCyiAWOpTXpBxcRcCkn8BVrZif+AjUJQSA5Jo4VpbMQiJtrE/CCojZ3YGEQx9nYaE6PRxOJWBp4Qwu7czuzb3Tm4L3zhmn1vPszsm7fvoKWWgtceoArUgGlgEfgO/BWb35+A58AI0CfPBKGKLGgSWAciR/8BJoAzEqsUXQDeeyw+yQvAYJEAR4BXigBb/QLoyhviHLCSI0QkXgUu5wFgzu9QAQDRFtc03x0TaKwEiEj8QAtmpESISHwnK8SlACAi8ZUs1emn0iLMffFQSraJux/YB7QDncBRYLRBjB/AYR8QrRL7EjiQIt/VFLHmXSHOK0HMAjtS5kwDYjyQFqKidGN/kyOEMsi7tFWsT2k3hh0gXEAioDdNwEklkGOWHN3Afcn1328dYo83gtjr2cXGVZjtFoiNjPF/A7ttIFXFTjZJj5Ry9NhAakpJXltyfCniHZxWSjKXEL8iX4saOaZsIJ8V74847VKKH8lnc6KWmgjkqw1ko4lA1rVBBqT522zbdKQ9wXcd85q1JmrZA+Q0Onri0QIlarFEENNDueT9aAs2WxLINmBNs/wOlwRySPvzt98j4HXpnza7y3Ihdsf4mkfeXhuIacR+eQQtuvyuAW2NtvlpE4BMkEI9TQByKg2IOccfAgZZwEFnAwapUuA4KC+QeTzUKVPxUEBWgIN4yjSE9QBA6sBFMup2ACBDKOleiSCjKOuGwzHTAKlr7kTcX2/LBYAsucx4s3SqMzmCTAEdFKh+y5jTB+SNzJ1L03HgsYxJXUFWZfJoYgQjs8iTwE0pDHHaCTwDbgEn5JmWWiJg/QOlYrQmouYwLQAAAABJRU5ErkJggg==">
+                        </li>
+                        <li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAACpElEQVR4nO2ZW4hOURTHf8aMkfv1gUGTeDEpIRopKaVcH5Dk8sK8iNJQEi+8kJQiIeLJizJ5ECFCXgghk5REMchlXHMdoz2tr7Yv8511ztn7fJvOr3Z9nbPPWvt/9jp777U+yMnJyflf6AKcBtoj2i9glgf/Ky0fl4HqNMZqgLcKMc+AAe40MBP4IbbvA/1dGF2uEGLaMRfOgDrgndh8BYzCIceVYhan9DMEeCK2vgD1OGYQ8FwhpBUYltBHL+CW9d0twRNzlbNyVhaKOHQFTlo2NuCZI0oxDTHt7rWePUQG9AEeK4R8ivGRNlrPnQEqyYipQJtCzFUJmVLMAX5K/3tAXzJmtzLE1pewMUFmrrAPDacMVMsbjBLyFRj7l+drgRfS5yMwjjIyHviuEGOW1G5F39lduWfCah4BsFUZYtukfxVw3rq+hkCoBK4rhJhz02TggHVtF4ExRo4TUWI+WL+bgAoCpFEZYqbdAHoSKBXAJaWQhQROLfBeIeSpq/zCJ6uUs3KUf4AmpZgFBM5Q4JtCyEtgMAGzI8YKZnKQIGmwBvlZKWYFgTHdCqmHko8U8u9SzRQaRhDQ7t4qA3sNjJbrMyT/jhJzIUF67JziyseUovv7lCG2ljLSA7gmAzFvfmknfR4ohJiXYGpaZTmW2JWPjSX61lspbdQ5rIqM2WMN4LCi/3ZliG0hQ9ZZji8WZYCdYfrcVuYuEzPQwGwrTJqBfjGerVPmLs1Ad48a/qh8tCRc/zcpQ2wnnqiRI3hh156UYpG4ohDSBkxzrKGj8nHHcjA/pb2RUgaKEvMI6O1IQ8dyeM7DxrVaGWIHHfljv2XUVBiz/muvXRaYVGy2jJ1S1HKT5C5vFEJagIFJnSyyDnw3PVY+liln5YQn/zk5OTlkz2+ked7zP57ghQAAAABJRU5ErkJggg=="></li>
+                        <li><img width="50" height="50" src="https://img.icons8.com/ios/50/instagram-new.png" alt="instagram-new"/></li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="avatat">
+                <img src="VaibhavWorking-PhotoRoom.png" alt="">
+
+            </div>
+        </div>
+    </div>
 
 </body>
 

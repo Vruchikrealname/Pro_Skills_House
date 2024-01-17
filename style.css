@@ -3,13 +3,7 @@
 
 
 
-.material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 24
-}
+ 
 
 html {
     scroll-behavior: smooth;
@@ -46,15 +40,13 @@ header{
     width: calc(100% -20px);
     padding: 10px;
     border-bottom: 1px solid #dce1e4;
+    display: grid;
     grid-template-columns: 30% 70%;
     background-color: var(--light);
     z-index: 1;
 
 }
-.logo{
-    display: flex;
-    align-items: center;
-}
+
 header .logo img{
     height: 50px;
     width: 50px;
@@ -71,4 +63,13 @@ header ul{
 header ul li {
     padding: 0 30px ;
 
+}
+.container{
+    width: 1200px;
+    max-width: 90%;
+    margin: auto;
+
+}
+.banner{
+    margin-top: 150px;
 }
