@@ -13,7 +13,7 @@ html {
     --light: #eaecee;
     --color--text: #3c3e41;
     --box-shodow: 5px 5px 15px #c1c8d3, -5px -5px -15px #ffffffff;
-    --gradient-bg: linear-gradient(-45deg, #D000F7, #24BAE3);
+    --gradient-bg:linear-gradient(-45deg, #D000F7, #24BAE3);
 
     
 }
@@ -86,3 +86,78 @@ header ul li {
     font-size: 4.5rem;
     margin: 0;
 }
+
+ .gradientText{
+    display: inline-block;
+    background: var(--gradient-bg);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+} 
+.job {
+    display: inline-block;
+
+
+}
+.job::before{
+    content: attr(data-job1);
+    overflow: hidden;
+    display: inline-flex;
+    animation: effectText 1s linear infinite alternate, changeText 4s linear infinite;
+}
+@keyframes effectText {
+    from{
+        width: 0;
+    }
+    to{
+        width: 500px;
+    }
+}
+
+@keyframes changeText{
+    from{
+        content: attr(data-job1);
+    }
+    to{
+        content: attr(data-job2);
+    }
+
+} 
+
+
+/* 
+.gradientText {
+    display: inline-block;
+    background-color: var(--gradient-bg);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.job {
+    display: inline-block;
+}
+
+.job::before {
+    content: attr(data-job1);
+    overflow: hidden;
+    display: inline-flex;
+    animation: effectText 1s linear infinite alternate, changeText 1s linear infinite;
+}
+
+@keyframes effectText {
+    from {
+        width: 0;
+    }
+    to {
+        width: 500px;
+    }
+}
+
+@keyframes changeText {
+    from {
+        content: attr(data-job1);
+    }
+    to {
+        content: attr(data-job2);
+    }
+} */
