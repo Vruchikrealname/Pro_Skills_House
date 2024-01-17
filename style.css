@@ -233,6 +233,119 @@ header input {
     content: '';
     border-radius: 10px;
 
+}
+.listProject{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    border-bottom: 1px solid #009dff;
 
+}
+.listProject .item{
+    text-align: center;
+    box-shadow: var(--box-shodow);
+    padding: 20px;
+}
+.listProject .item img{
+    width: 90%;
+    border-radius: 20px;
 
+}
+.listProject .item{
+    text-align: center;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: large;
+}
+.contact{
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+
+}
+.contact li{
+    width: 50px;
+    height: 50px;
+    margin: 20px;
+    box-shadow: var(--box-shodow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    transition: .5s;
+}
+.contact li:hover{
+    background-image: var(--gradient-bg);
+    color: #fff;
+}
+@media screen and (min-width: 1224px) {
+    .banner{
+        grid-template-columns: 40% 60%;
+
+    }
+    .banner .contact h1{
+        font-size: 2em;
+    }
+    .listProject{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+@media screen and (max-width: 767px){
+    .banner{
+        grid-template-columns: 1fr;
+    }
+    .banner .contact h1{
+        font-size: 1.2em;
+    }
+    .banner .avatar {
+        grid-row-start: 1;
+    }
+    header .navDiv{
+        display: flex;
+        justify-content: flex-end;
+        
+    }
+    header label{
+        width: 5px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: red;
+        box-shadow: var(--box-shodow);
+        border-radius: 50%;
+
+    }
+    header .nav{
+        position: fixed;
+        background-color: #0099ff;
+        z-index: 1;
+        width: 70%;
+        height: 100vh;
+        left: 0;
+        top: 0;
+        display: grid;
+        grid-template-columns:1fr;
+        grid-template-rows: repeat(5, 70px);
+        transform: translateX(-100%);
+        /* transition: .5s; */
+
+    }
+    input#menu:checked ~ .nav{
+        transform: translateX(0%);
+    }
+    header .nav label{
+        width: 50px;
+        height: 50px;
+        box-shadow: var(--box-shodow);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        color: red;
+    }
 }
