@@ -177,7 +177,7 @@ header ul li {
 }
 .banner .avatar:hover{
     position: absolute;
-    content: "";
+    content: '';
     widows: 90%;
     height: 80%;
     z-index: -1;
@@ -196,7 +196,7 @@ header .nav label,
 header input{
 display: none;
 }
-.titel{
+.title{
     text-align: center;
     padding-top: 100px;
 }
@@ -204,5 +204,26 @@ display: none;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px 20px;
-    border-bottom:5px ;
+    border-bottom: 1px solid #dce1e4 ;
+    padding-bottom: 50px;
+}
+.listskills .evaluate{
+    widows: 100%;
+    height: 20px;
+    box-shadow: var(--box-shodow);
+    border-radius: 10px;
+    margin-top: 20px;
+    position: relative;
+
+}
+.listskills .evaluate::before{
+    position: absolute;
+    height: 100%;
+    width: var(--point);
+    background-image: var(--gradient-bg);
+    content: '';
+    border-radius: 10px;
+
+
+    
 }
