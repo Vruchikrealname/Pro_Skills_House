@@ -178,6 +178,7 @@ header ul li {
     position: relative;
     height: max-content;
     text-align: center;
+    box-shadow: var(--box-shodow);
 }
 
 /* .banner .avatar:hover {
