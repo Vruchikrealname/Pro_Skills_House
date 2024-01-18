@@ -186,7 +186,7 @@ header ul li {
     content: '';
     widows: 90%;
     height: 80%;
-    z-index: -auto;
+    z-index: -1;
     bottom: 10px;
     border-radius: 10px;
     box-shadow: var(--box-shodow);
