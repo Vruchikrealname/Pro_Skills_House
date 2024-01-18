@@ -85,7 +85,7 @@ header ul li {
     display: grid;
     grid-template-columns: 60% 40%;
     border-bottom: 1px solid #dce1e4;
-    padding: 50px;
+    /* padding: 50px; */
 
 }
 
@@ -97,6 +97,7 @@ header ul li {
 .banner .content h1 {
     font-size: 4.5rem;
     margin: 0;
+    
 }
 
 .gradientText {
