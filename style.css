@@ -58,10 +58,6 @@ header .logo img {
     height: 50px;
     width: 50px;
 }
-.lines{
-    margin-right: -37px;
-    margin-top: 7px;
-}
 
 header ul {
     margin: 0;
@@ -109,6 +105,8 @@ header ul li {
     background: var(--gradient-bg);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-size: medium;
+    
 
 }
 
@@ -131,7 +129,7 @@ header ul li {
     }
 
     to {
-        width: 100px;
+        width: 160px;
     }
 }
 
@@ -182,18 +180,17 @@ header ul li {
     text-align: center;
 }
 
-.banner .avatar:hover {
+/* .banner .avatar:hover {
     position: absolute;
     content: '';
     widows: 90%;
     height: 80%;
-    z-index: -1;
-    bottom: 0;
+    z-index: -auto;
+    bottom: 10px;
     border-radius: 10px;
     box-shadow: var(--box-shodow);
-
-
-}
+   
+} */
 
 .banner img {
     width: 90%;
@@ -314,8 +311,8 @@ header input {
         
     }
     header label{
-        width: 5px;
-        height: 50px;
+        /* width: 5px; */
+        /* height: 50px; */
         display: flex;
         justify-content: center;
         align-items: center;
