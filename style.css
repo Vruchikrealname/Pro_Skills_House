@@ -112,7 +112,7 @@ header ul li {
 
 }
 
-.job {
+ .job {
     display: inline-block;
 
 
@@ -131,7 +131,7 @@ header ul li {
     }
 
     to {
-        width: 500px;
+        width: 100px;
     }
 }
 
@@ -144,7 +144,7 @@ header ul li {
         content: attr(data-job2);
     }
 
-}
+} 
 
 .find {
     margin-top: 5opx;
@@ -326,9 +326,9 @@ header input {
     }
     header .nav{
         position: fixed;
-        background-color: #0099ff;
+        background-color: #a2c9e3;
         z-index: 1;
-        width: 70%;
+        width: 40%;
         height: 100vh;
         left: 0;
         top: 0;
