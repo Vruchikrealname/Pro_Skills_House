@@ -325,7 +325,7 @@ header input {
     }
     header .nav{
         position: fixed;
-        background-color: #d8e2e8;
+        background-color: #d8e2e8; 
         z-index: 1;
         width: 50%;
 
@@ -334,7 +334,7 @@ header input {
         top: 0;
         display: grid;
         grid-template-columns:1fr;
-        grid-template-rows: repeat(5, 70px);
+        grid-template-rows: repeat(5, 70px); 
         transform: translateX(-100%);
         transition: .2s;
 
