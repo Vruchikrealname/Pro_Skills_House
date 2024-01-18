@@ -239,7 +239,7 @@ header input {
 }
 .listProject{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr) !important;
     gap: 20px;
     border-bottom: 1px solid #009dff;
 
