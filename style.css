@@ -326,6 +326,7 @@ header input {
         background-color: #a2c9e3;
         z-index: 1;
         width: 40%;
+
         height: 100vh;
         left: 0;
         top: 0;
@@ -333,7 +334,7 @@ header input {
         grid-template-columns:1fr;
         grid-template-rows: repeat(5, 70px);
         transform: translateX(-100%);
-        /* transition: .5s; */
+        transition: .2s;
 
     }
     input#menu:checked ~ .nav{
