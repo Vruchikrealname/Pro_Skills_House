@@ -105,13 +105,14 @@ header ul li {
     background: var(--gradient-bg);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: medium;
+    /* font-size: medium; */
     
 
 }
 
  .job {
     display: inline-block;
+    font-size: 50px;
 
 
 }
@@ -129,7 +130,7 @@ header ul li {
     }
 
     to {
-        width: 160px;
+        width: 200px;
     }
 }
 
