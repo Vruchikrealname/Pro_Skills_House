@@ -11,7 +11,7 @@ html {
 :root {
     --light: #eaecee;
     --color--text: #3c3e41;
-    --box-shodow: 5px 5px 15px #c1c8d3, -5px -5px -15px #ffffffff;
+    --box-shodow: 5px 5px 15px #c1c8d3, -5px -5px 15px #ffffffff;
     --gradient-bg: linear-gradient(-45deg, #D000F7, #24BAE3);
 
 
@@ -72,8 +72,7 @@ header ul {
 header ul li {
     padding: 0 30px;
 
-}
-
+} 
 .container {
     width: 1200px;
     max-width: 90%;
@@ -312,8 +311,8 @@ header input {
         
     }
     header label{
-        /* width: 5px; */
-        /* height: 50px; */
+        width: 50px;
+        height: 50px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -324,7 +323,7 @@ header input {
     }
     header .nav{
         position: fixed;
-        background-color: #a2c9e3;
+        background-color: #d8e2e8;
         z-index: 1;
         width: 40%;
 
@@ -350,5 +349,13 @@ header input {
         align-items: center;
         border-radius: 50%;
         color: red;
+    }
+    .banner .content{
+        padding-right: 0px;
+        
+    }
+    .listskills{
+        grid-template-columns: 1fr;
+
     }
 }
