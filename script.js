@@ -13,20 +13,34 @@
             var isMenuClicked = event.target.closest('#menu');
             var isNavLinkClicked = event.target.closest('.nav a');
 
-            // Check if the clicked element is not the menu checkbox and not within the navigation bar
-            if (!isMenuClicked && !navBar.contains(event.target)) {
-                menuCheckbox.checked = false;
-                toggleNavBar();
+            // Check if the clicked element is not the menu checkbox
+            if (!isMenuClicked) {
+                // If a navigation link (tab) is clicked, close the menu
+                if (isNavLinkClicked) {
+                    menuCheckbox.checked = false;
+                    toggleNavBar();
+                } else if (!navBar.contains(event.target)) {
+                    // If clicked outside the navigation bar, close the menu
+                    menuCheckbox.checked = false;
+                    toggleNavBar();
+                }
             }
+        });
 
-            // Check if a navigation link (tab) is clicked
-            if (isNavLinkClicked) {
-                menuCheckbox.checked = false;
+        // Adjust the script to close the navigation bar on window resize
+        window.addEventListener('resize', function () {
+            if (!menuCheckbox.checked) {
                 toggleNavBar();
             }
         });
 
         function toggleNavBar() {
-            navBar.style.transform = menuCheckbox.checked ? 'translateX(0%)' : 'translateX(-100%)';
+            navBar.style.transition = 'transform 0.2s ease-in-out';
+            // navBar.style.transform = menuCheckbox.checked ? 'translateX(0%)' : 'translateX(-100%)';
+
+            // Reset transition property after animation
+            setTimeout(function () {
+                navBar.style.transition = '';
+            }, 200);
         }
     });
