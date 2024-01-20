@@ -402,6 +402,13 @@ header input {
         padding-right: 0px;
 
     }
+    .listProject {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 20px;
+        border-bottom: 1px solid #009dff;
+    
+    }
 
     .listskills {
         grid-template-columns: 1fr;
