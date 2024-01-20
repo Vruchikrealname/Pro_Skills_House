@@ -293,7 +293,7 @@ header input {
     background-color: #afe0ee; 
     box-shadow: var(--box-shodow);
     transition: .4s;
-    /* border-radius: 50px; */
+    border-radius: 50px;
 
     
 
@@ -438,6 +438,6 @@ header input {
 
     }
     .contact-two{
-        font-size: 12px;
+        font-size: 10px;
     }
 }
