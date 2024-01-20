@@ -333,6 +333,7 @@ header input {
     box-shadow: var(--box-shodow);
     border-radius: 5px;
     transition: .5s;
+    font-size: medium;
 }
 
 /******************************** to make Responsive******************************/
@@ -435,5 +436,8 @@ header input {
     .listskills {
         grid-template-columns: 1fr;
 
+    }
+    .contact-two{
+        font-size: 12px;
     }
 }
