@@ -319,6 +319,8 @@ header input {
     transition: .5s;
 }
 
+/******************************** to make Responsive******************************/
+
 @media screen and (min-width: 1224px) {
     .banner {
         grid-template-columns: 40% 60%;
@@ -330,23 +332,13 @@ header input {
     }
 
     .listProject {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
 
 }
 
 @media screen and (max-width: 767px) {
-    .banner {
-        grid-template-columns: 1fr;
-    }
-
-    .banner .contact h1 {
-        font-size: 1.2em;
-    }
-
-    .banner .avatar {
-        grid-row-start: 1;
-    }
+    
 
     header .navDiv {
         display: flex;
@@ -371,7 +363,6 @@ header input {
         background-color: #d8e2e8;
         z-index: 1;
         width: 50%;
-
         height: 100%;
         left: 0;
         top: 0;
@@ -397,11 +388,25 @@ header input {
         border-radius: 50%;
         color: red;
     }
+    /* ******************************Banner*************************/
 
     .banner .content {
         padding-right: 0px;
 
     }
+    .banner {
+        grid-template-columns: 1fr;
+    }
+
+    .banner .contact h1 {
+        font-size: 1.2em;
+    }
+
+    .banner .avatar {
+        grid-row-start: 1;
+    }
+
+    /* ******************************Project*************************/
     .listProject {
         display: grid;
         grid-template-columns: repeat(2, 1fr) !important;
@@ -409,6 +414,7 @@ header input {
         border-bottom: 1px solid #009dff;
     
     }
+    
 
     .listskills {
         grid-template-columns: 1fr;
