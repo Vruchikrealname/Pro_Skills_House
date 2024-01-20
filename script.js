@@ -44,3 +44,21 @@
             }, 200);
         }
     });
+
+
+
+    document.addEventListener('DOMContentLoaded', function () {
+        var tabs = document.querySelectorAll('.tab');
+    
+        tabs.forEach(function (tab) {
+          tab.addEventListener('click', function () {
+            // Remove the 'active' class from all tabs
+            tabs.forEach(function (t) {
+              t.classList.remove('active');
+            });
+    
+            // Add the 'active' class to the clicked tab
+            tab.classList.add('active');
+          });
+        });
+      });
