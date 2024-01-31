@@ -414,13 +414,14 @@ header input {
         z-index: 1;
         width: 50%;
         height: 100%;
-        left: 0;
+        left: -41px;
         top: 0;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(8, 70px);
         transform: translateX(-100%);
         transition: .2s;
+        text-align: center;
 
     }
 
@@ -438,6 +439,7 @@ header input {
         border-radius: 50%;
         color: red;
     }
+    
     /* ******************************Banner*************************/
 
     .banner .content {
