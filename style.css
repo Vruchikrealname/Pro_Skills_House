@@ -483,5 +483,8 @@ header input {
     .find{
         text-align: center;
     }
+    .material-symbols-outlined{
+        text-align: center;
+    }
    
 }
