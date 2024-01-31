@@ -412,7 +412,7 @@ header input {
         position: fixed;
         background-color: #d8e2e8;
         z-index: 1;
-        width: 50%;
+        width: 100%;
         height: 100%;
         left: -41px;
         top: 0;
